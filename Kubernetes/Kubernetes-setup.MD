@@ -93,3 +93,7 @@
    # kubectl expose deployment simple-devops-project --port=8080 --type=LoadBalancer
    kubectl get services -o wide
    ```
+   
+    kops create cluster --name=demo.awscloud.ga --state=s3://kubernetes12 --node-count=2 --node-size=t2.medium --zones=us-east-1a --dns-zone=awscloud.ga --cloud=aws
+
+   
