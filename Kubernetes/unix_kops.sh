@@ -1,6 +1,9 @@
 #kubernetes installation by kops in ubuntu
 hostnamectl set-hostname kube.example.com
 apt-get update -y
+apt-get install docker.io -y
+systemctl start docker
+systemctl enable docker
 apt-get install python3 python3-pip -y
 pip3 install awscli
 #aws configure
